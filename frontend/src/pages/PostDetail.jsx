@@ -153,7 +153,7 @@ const PostDetail = () => {
       return;
     }
     const token = localStorage.getItem('token');
-    const response = await fetch(`http://localhost:5000/api/posts/${id}/comments`, {
+    const response = await fetch(`https://buzz-net-rose.vercel.app/api/posts/${id}/comments`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -171,7 +171,7 @@ const PostDetail = () => {
 
   const handleLikeComment = async (commentId) => {
     const token = localStorage.getItem('token');
-    await fetch(`http://localhost:5000/api/posts/${id}/comments/${commentId}/like`, {
+    await fetch(`https://buzz-net-rose.vercel.app/api/posts/${id}/comments/${commentId}/like`, {
       method: 'PATCH',
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -180,7 +180,7 @@ const PostDetail = () => {
 
   const handleDislikeComment = async (commentId) => {
     const token = localStorage.getItem('token');
-    await fetch(`http://localhost:5000/api/posts/${id}/comments/${commentId}/dislike`, {
+    await fetch(`https://buzz-net-rose.vercel.app/api/posts/${id}/comments/${commentId}/dislike`, {
       method: 'PATCH',
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -194,7 +194,7 @@ const PostDetail = () => {
 
     const token = localStorage.getItem('token');
     try {
-      const response = await fetch(`http://localhost:5000/api/posts/${id}/comments/${commentId}`, {
+      const response = await fetch(`https://buzz-net-rose.vercel.app/api/posts/${id}/comments/${commentId}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });
