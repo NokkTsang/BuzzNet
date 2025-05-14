@@ -70,7 +70,7 @@ const PostItem = ({ post, onDelete }) => {
 
     setIsLoading(true);
     try {
-      const response = await fetch(`http://localhost:5000/api/posts/${post._id}/like`, {
+      const response = await fetch(`https://buzz-net-rose.vercel.app/api/posts/${post._id}/like`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -110,7 +110,7 @@ const PostItem = ({ post, onDelete }) => {
 
     setIsLoading(true);
     try {
-      const response = await fetch(`http://localhost:5000/api/posts/${post._id}/dislike`, {
+      const response = await fetch(`https://buzz-net-rose.vercel.app/api/posts/${post._id}/dislike`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
