@@ -3,7 +3,7 @@
 Group Project for CSCI3100 2024-25 Sem 2 at CUHK
 
 ## This is online deployed version of BuzzNet !
-- Check out at https://buzz-net-tau.vercel.app/
+- Let's chat at https://buzz-net-tau.vercel.app/
 
 # Developer's Role
 
