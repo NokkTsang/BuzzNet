@@ -1,7 +1,7 @@
 const fetchPosts = async () => {
   try {
     const token = localStorage.getItem('token');
-    const response = await fetch('http://localhost:5000/api/posts', {
+    const response = await fetch('https://buzz-net-rose.vercel.app/api/posts', {
       headers: {
         'Authorization': `Bearer ${token}`
       }
