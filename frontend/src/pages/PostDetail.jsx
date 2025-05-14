@@ -22,7 +22,7 @@ const PostDetail = () => {
   const fetchPost = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/posts/${id}`, {
+      const response = await fetch(`https://buzz-net-rose.vercel.app/api/posts/${id}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -61,7 +61,7 @@ const PostDetail = () => {
 
     setIsLoadingAction(true);
     try {
-      const response = await fetch(`http://localhost:5000/api/posts/${id}/like`, {
+      const response = await fetch(`https://buzz-net-rose.vercel.app/api/posts/${id}/like`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -98,7 +98,7 @@ const PostDetail = () => {
 
     setIsLoadingAction(true);
     try {
-      const response = await fetch(`http://localhost:5000/api/posts/${id}/dislike`, {
+      const response = await fetch(`https://buzz-net-rose.vercel.app/api/posts/${id}/dislike`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
