@@ -55,6 +55,7 @@ const allowedOrigins = [
   'https://buzznet.vercel.app',
   'https://buzznet-api.vercel.app',
   'https://buzznet-xi.vercel.app',
+  'https://buzz-net-tau.vercel.app'
 ];
 
 app.use(
