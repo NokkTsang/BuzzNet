@@ -1,4 +1,7 @@
-# BuzzNet
+#
+<div align="center">
+  <img src="media/logo.png" alt="BuzzNet Logo" width="250"/>
+</div>
 
 - Group Project for CSCI3100 Software Engineering 2024-25 Sem 2 at CUHK
 
